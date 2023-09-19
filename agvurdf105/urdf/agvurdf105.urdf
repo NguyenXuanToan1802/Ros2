@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="agvurdf105">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="0.267477618334827 -0.656827103060633 0.414562352931217"
+        rpy="0 0 0" />
+      <mass
+        value="19.443300778032" />
+      <inertia
+        ixx="0.446819644512665"
+        ixy="7.04283683372709E-07"
+        ixz="2.18700527469743E-08"
+        iyy="0.128806910514398"
+        iyz="9.53698428759998E-07"
+        izz="0.537326846655045" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="bchinh1">
+    <inertial>
+      <origin
+        xyz="0.0797674207486164 -5.73364548395183E-07 3.4592532938138E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.597832815380611" />
+      <inertia
+        ixx="0.00104674915101719"
+        ixy="-3.25283307471418E-09"
+        ixz="2.75150350511716E-09"
+        iyy="0.000680797544035403"
+        iyz="8.27213187136249E-09"
+        izz="0.000680816136383611" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bchinh1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bchinh1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banh1"
+    type="revolute">
+    <origin
+      xyz="0.39861 -0.5942 0.38553"
+      rpy="2.4972 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="bchinh1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="20"
+      velocity="1" />
+    <dynamics
+      damping="2"
+      friction="2" />
+  </joint>
+  <link
+    name="bchinh2">
+    <inertial>
+      <origin
+        xyz="-0.0332325423207638 -5.51442441709682E-07 3.88780041882253E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.597832236823257" />
+      <inertia
+        ixx="0.00104674919669424"
+        ixy="-3.27522462262069E-09"
+        ixz="2.7602611676384E-09"
+        iyy="0.000680797594373258"
+        iyz="8.29406440059497E-09"
+        izz="0.000680816144487321" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bchinh2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bchinh2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banh2"
+    type="revolute">
+    <origin
+      xyz="0.025614 -0.5942 0.38553"
+      rpy="-3.1224 0 3.1416" />
+    <parent
+      link="base" />
+    <child
+      link="bchinh2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="20"
+      velocity="1" />
+    <dynamics
+      damping="2"
+      friction="2" />
+  </joint>
+  <link
+    name="bphu1">
+    <inertial>
+      <origin
+        xyz="0 -0.00173512867251724 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.048165597678071" />
+      <inertia
+        ixx="2.23785467678531E-05"
+        ixy="-4.1282822947913E-23"
+        ixz="-3.3292548367986E-20"
+        iyy="5.64406148404847E-05"
+        iyz="1.01819135798511E-23"
+        izz="3.61208137584202E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banhp1"
+    type="fixed">
+    <origin
+      xyz="0.47611 -0.3092 0.41953"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base" />
+    <child
+      link="bphu1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="linkbp1">
+    <inertial>
+      <origin
+        xyz="-0.00617677641709502 -0.0358398173875589 0.00518685509486075"
+        rpy="0 0 0" />
+      <mass
+        value="0.114257387372318" />
+      <inertia
+        ixx="6.34571166352206E-05"
+        ixy="-3.62439447488159E-06"
+        ixz="-2.34583618434929E-07"
+        iyy="8.05860290746564E-05"
+        iyz="-5.080649693722E-07"
+        izz="5.9910521336905E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jbp1"
+    type="continuous">
+    <origin
+      xyz="0.01 0 0"
+      rpy="3.14159265358979 -0.547967558025908 3.14159265358979" />
+    <parent
+      link="bphu1" />
+    <child
+      link="linkbp1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="bp1">
+    <inertial>
+      <origin
+        xyz="0.00548428858717928 9.97438591721078E-08 -7.52742982057519E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0726271521733352" />
+      <inertia
+        ixx="3.58320530073967E-05"
+        ixy="1.1750871191831E-10"
+        ixz="-9.14672268149594E-11"
+        iyy="2.23018430138028E-05"
+        iyz="-2.03994864241253E-10"
+        izz="2.23019031302214E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bp1"
+    type="revolute">
+    <origin
+      xyz="0.031036 -0.06543 0"
+      rpy="0.29396 -1.5708 -0.29568" />
+    <parent
+      link="linkbp1" />
+    <child
+      link="bp1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="bphu2">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 -0.00173512867251724 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.048165597678071" />
+      <inertia
+        ixx="2.23785467678531E-05"
+        ixy="-7.91930310749027E-23"
+        ixz="-2.27241722811059E-19"
+        iyy="5.64406148404846E-05"
+        iyz="2.28409602871977E-23"
+        izz="3.61208137584202E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banhp2"
+    type="fixed">
+    <origin
+      xyz="0.476113744053953 -0.879202901304281 0.419533078366042"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base" />
+    <child
+      link="bphu2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="linkbp2">
+    <inertial>
+      <origin
+        xyz="-0.0173963547118563 -0.0358398173875772 -0.00965583082141919"
+        rpy="0 0 0" />
+      <mass
+        value="0.114257387372318" />
+      <inertia
+        ixx="6.34571166352199E-05"
+        ixy="-3.62439447488278E-06"
+        ixz="-2.34583618434789E-07"
+        iyy="8.05860290746565E-05"
+        iyz="-5.08064969372119E-07"
+        izz="5.99105213369047E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jbp2"
+    type="continuous">
+    <origin
+      xyz="0.01 0 0"
+      rpy="0 1.29909292552263 0" />
+    <parent
+      link="bphu2" />
+    <child
+      link="linkbp2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="bp2">
+    <inertial>
+      <origin
+        xyz="-0.0093583982201465 9.55880134489995E-08 -7.51185361358431E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0726271557950019" />
+      <inertia
+        ixx="3.58320539848372E-05"
+        ixy="1.19126244069086E-10"
+        ixz="-9.08342456740752E-11"
+        iyy="2.23018408664583E-05"
+        iyz="-2.12021323796501E-10"
+        izz="2.23019063481509E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bp2"
+    type="revolute">
+    <origin
+      xyz="0.0198162726250184 -0.0654300000000542 0"
+      rpy="0.133952495949054 -1.5707963267949 0" />
+    <parent
+      link="linkbp2" />
+    <child
+      link="bp2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="bphu3">
+    <inertial>
+      <origin
+        xyz="0 -0.00173512867251724 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.048165597678071" />
+      <inertia
+        ixx="2.23785467678531E-05"
+        ixy="4.89452027298181E-23"
+        ixz="-4.58690116376147E-20"
+        iyy="5.64406148404847E-05"
+        iyz="6.50103152319964E-24"
+        izz="3.61208137584202E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banhp3"
+    type="fixed">
+    <origin
+      xyz="0.0611137440539526 -0.309202901304281 0.419533078366042"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base" />
+    <child
+      link="bphu3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="linkbp3">
+    <inertial>
+      <origin
+        xyz="-0.0226154519084126 -0.0358398173875543 0.0049167107004528"
+        rpy="0 0 0" />
+      <mass
+        value="0.114257387372317" />
+      <inertia
+        ixx="6.34571166352197E-05"
+        ixy="-3.62439447488186E-06"
+        ixz="-2.34583618434877E-07"
+        iyy="8.05860290746559E-05"
+        iyz="-5.08064969372411E-07"
+        izz="5.99105213369042E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jbp3"
+    type="continuous">
+    <origin
+      xyz="0.01 0 0"
+      rpy="0 -0.659526494459053 0" />
+    <parent
+      link="bphu3" />
+    <child
+      link="linkbp3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="bp3">
+    <inertial>
+      <origin
+        xyz="0.00340218074527618 9.7061702619694E-08 -7.51595165493502E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0726271555796053" />
+      <inertia
+        ixx="3.58320539433918E-05"
+        ixy="1.18513839971375E-10"
+        ixz="-9.11230038687106E-11"
+        iyy="2.23018421047147E-05"
+        iyz="-2.09174145745195E-10"
+        izz="2.23019050543166E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bp3"
+    type="revolute">
+    <origin
+      xyz="0.0145971754284785 -0.0654300000000004 0"
+      rpy="3.05625695459658 -1.5707963267949 0" />
+    <parent
+      link="linkbp3" />
+    <child
+      link="bp3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="bphu4">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 -0.00173512867251718 6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.048165597678071" />
+      <inertia
+        ixx="2.23785467678531E-05"
+        ixy="6.92044003096395E-23"
+        ixz="-4.57017288435548E-20"
+        iyy="5.64406148404847E-05"
+        iyz="2.89501199341393E-23"
+        izz="3.61208137584202E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bphu4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banhp4"
+    type="fixed">
+    <origin
+      xyz="0.0611137440539523 -0.879202901304281 0.419533078366042"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base" />
+    <child
+      link="bphu4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="linkbp4">
+    <inertial>
+      <origin
+        xyz="-0.011570457547936 -0.0358398173875539 -0.00951619128780645"
+        rpy="0 0 0" />
+      <mass
+        value="0.114257387372317" />
+      <inertia
+        ixx="6.34571166352197E-05"
+        ixy="-3.62439447488175E-06"
+        ixz="-2.34583618435016E-07"
+        iyy="8.0586029074656E-05"
+        iyz="-5.08064969372299E-07"
+        izz="5.99105213369044E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/linkbp4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jbp4"
+    type="continuous">
+    <origin
+      xyz="0.01 0 0"
+      rpy="3.14159265358979 1.25116458148953 3.14159265358979" />
+    <parent
+      link="bphu4" />
+    <child
+      link="linkbp4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="bp4">
+    <inertial>
+      <origin
+        xyz="-0.00921875829826735 9.78950709384918E-08 -7.47259863570493E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0726271892907674" />
+      <inertia
+        ixx="3.5832064033052E-05"
+        ixy="1.16893406243337E-10"
+        ixz="-9.33203659717243E-11"
+        iyy="2.23018579639734E-05"
+        iyz="-2.0746977069453E-10"
+        izz="2.23018998695872E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/bp4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bp4"
+    type="revolute">
+    <origin
+      xyz="0.0256421697889556 -0.0654299999999998 0"
+      rpy="2.26327581951186 -1.5707963267949 0" />
+    <parent
+      link="linkbp4" />
+    <child
+      link="bp4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ur10">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-16 0.00230257693813485 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0364089378591594" />
+      <inertia
+        ixx="2.1029948904954E-05"
+        ixy="2.41261439305053E-21"
+        ixz="-3.18981523715751E-20"
+        iyy="4.18104005460012E-05"
+        iyz="6.99182024269061E-22"
+        izz="2.1029948904954E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/ur10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/ur10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ur"
+    type="fixed">
+    <origin
+      xyz="0.304113744053951 -0.341702901304287 0.559533078366042"
+      rpy="-1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base" />
+    <child
+      link="ur10" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.00242858722447592 -0.0468552073229127 1.02546085278821E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0284317625502586" />
+      <inertia
+        ixx="1.3042832010191E-05"
+        ixy="1.71082117518441E-07"
+        ixz="-1.29379473745037E-10"
+        iyy="1.34492369003028E-05"
+        iyz="4.203094470609E-11"
+        izz="1.40510841682619E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0.016264 0" />
+    <parent
+      link="ur10" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-4"
+      upper="-4"
+      effort="5"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.138826186828985 -0.0394636139180599 5.26657159549693E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.113010122911117" />
+      <inertia
+        ixx="5.24555107635127E-05"
+        ixy="-1.62877854258062E-13"
+        ixz="-1.63925720161292E-10"
+        iyy="0.000242437230724777"
+        iyz="-8.98067013148655E-11"
+        izz="0.000244047323028022" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="link2"
+    type="revolute">
+    <origin
+      xyz="0.030153 -0.038 0"
+      rpy="-3.1416 -1.5549 -1.5708" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="5"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.0879999798348363 -0.0360093769077456 1.81950632338612E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0859900430348366" />
+      <inertia
+        ixx="3.95330431699021E-05"
+        ixy="-1.68522030387062E-12"
+        ixz="-2.30230525675319E-10"
+        iyy="6.23043235535729E-05"
+        iyz="5.23201741931218E-13"
+        izz="6.35080797286195E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.268 0 0"
+      rpy="0 -0.48155 3.1416" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="5"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-0.0354180125232937 -0.00885524035123031 7.12365106125823E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0284318140111737" />
+      <inertia
+        ixx="1.3042834106626E-05"
+        ixy="1.71083517369247E-07"
+        ixz="-1.30461660946876E-10"
+        iyy="1.34492359647408E-05"
+        iyz="4.1322950347688E-11"
+        izz="1.40510825305489E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="link4"
+    type="revolute">
+    <origin
+      xyz="0.176 0 0"
+      rpy="2.9798 0 -1.5708" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="5"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.0592529742467944 -0.00885534780552188 8.04216093691634E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.028431823893689" />
+      <inertia
+        ixx="1.3042830449628E-05"
+        ixy="1.71088974162542E-07"
+        ixz="-1.08530773672595E-10"
+        iyy="1.34492292023672E-05"
+        iyz="3.59051680226573E-11"
+        izz="1.4051075325679E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="-0.037847 0.0063182 0"
+      rpy="-0.81837 0 -1.5708" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="5"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="-3.10862446895044E-15 -0.0545242147827427 3.15025783237388E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0513526297501136" />
+      <inertia
+        ixx="1.0370435669401E-05"
+        ixy="3.3881317890172E-21"
+        ixz="1.70084455820654E-08"
+        iyy="1.13707562195693E-05"
+        iyz="2.5410988417629E-21"
+        izz="1.10689654210708E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agvurdf105/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="continuous">
+    <origin
+      xyz="-0.061682 0 0"
+      rpy="0 -0.82334 -3.1416" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-4"
+      upper="4"
+      effort="5"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+</robot>
